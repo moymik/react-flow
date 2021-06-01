@@ -1,13 +1,13 @@
-import React, { memo } from 'react';
+import React, {memo} from 'react';
 
 import Handle from '../../components/Handle';
-import { NodeProps, Position } from '../../types';
+import {NodeProps, Position} from '../../types';
 
 const DefaultNode = ({
   data,
   isConnectable,
   targetPosition = Position.Top,
-  sourcePosition = Position.Bottom,
+  sourcePosition = Position.Left,
 }: NodeProps) => (
   <>
     <Handle type="target" position={targetPosition} isConnectable={isConnectable} />
